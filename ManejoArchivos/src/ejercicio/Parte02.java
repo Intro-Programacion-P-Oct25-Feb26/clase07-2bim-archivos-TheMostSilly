@@ -18,11 +18,11 @@ public class Parte02 {
 
     public static void leerArchivos() {
         double sum = 0;
-        
+        int contador = 0;
         try // lee registros del archivo, usando el objeto Scanner
         {
             Scanner entrada = new Scanner(new File("data/datosDos.txt"));
-            
+
             while (entrada.hasNext()) {
                 String linea = entrada.nextLine();
                 List<String> lista = Arrays.asList(linea.split("\\|"));
@@ -30,14 +30,14 @@ public class Parte02 {
                 double x = Double.parseDouble(linea_partes.get(3));
 
                 sum = sum + x;
-                
+                contador = contador + 1;
             }
             entrada.close();
         } catch (Exception e) {
             System.err.println("Error al leer del archivo.");
             System.exit(1);
         }
-        sum = sum/2;
+        sum = sum / contador;
         System.out.println(sum);
     }
 }
