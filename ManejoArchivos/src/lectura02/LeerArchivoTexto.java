@@ -22,6 +22,8 @@ public class LeerArchivoTexto {
             while (entrada.hasNext()) {
                 String linea = entrada.nextLine();
                 List<String> lista = Arrays.asList(linea.split("\\|"));
+                // Se usa el back slash pipe cuando es diferente de la coma y el
+                // punto y coma
                 ArrayList<String> linea_partes = new ArrayList<>(lista);
                 
                 
