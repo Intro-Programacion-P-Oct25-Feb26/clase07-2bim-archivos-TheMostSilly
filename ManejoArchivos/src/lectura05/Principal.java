@@ -9,8 +9,13 @@ package lectura05;
  * @author Lenovo
  */
 public class Principal {
+
     public static void main(String[] args) {
-        Estad
+        double est = Estadistica.sacarPromedio();
+        
+        System.out.println(est);
+        
+        
     }
-    
+
 }
