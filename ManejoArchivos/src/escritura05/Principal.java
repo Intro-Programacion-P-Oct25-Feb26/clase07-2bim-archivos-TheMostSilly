@@ -15,12 +15,12 @@ public class Principal {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        String cadenaFinal = "";
+        
         boolean sal = true;
         int x;
 
         while (sal) {
-
+            String cadenaFinal = "";
             System.out.println("Ingrese su nombre");
             String nombre = entrada.nextLine();
             System.out.println("Ingrese la placa del vehículo");
