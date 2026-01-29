@@ -1,6 +1,6 @@
 package escritura04;
 
-import escritura01.CrearArchivoTexto;
+
 import java.util.Scanner;
 
 /**
